@@ -9,9 +9,9 @@ import SwiftUI
 
 @main
 struct app_kioscoApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+   var body: some Scene {
+      WindowGroup {
+         Inicio()
+      }
+   }
 }

@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		4591556B2C3DA78700763E86 /* app_kioscoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4591556A2C3DA78700763E86 /* app_kioscoApp.swift */; };
-		4591556D2C3DA78700763E86 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4591556C2C3DA78700763E86 /* ContentView.swift */; };
+		4591556D2C3DA78700763E86 /* inicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4591556C2C3DA78700763E86 /* inicio.swift */; };
 		4591556F2C3DA78800763E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4591556E2C3DA78800763E86 /* Assets.xcassets */; };
 		459155722C3DA78800763E86 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 459155712C3DA78800763E86 /* Preview Assets.xcassets */; };
 		4591557C2C3DA78900763E86 /* app_kioscoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4591557B2C3DA78900763E86 /* app_kioscoTests.swift */; };
 		459155862C3DA78900763E86 /* app_kioscoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459155852C3DA78900763E86 /* app_kioscoUITests.swift */; };
 		459155882C3DA78900763E86 /* app_kioscoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459155872C3DA78900763E86 /* app_kioscoUITestsLaunchTests.swift */; };
+		45ABB8552C3EDEF300BF7B17 /* splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ABB8542C3EDEF300BF7B17 /* splash.swift */; };
+		45AEA8BE2C4074FD0073B1FC /* carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AEA8BD2C4074FD0073B1FC /* carousel.swift */; };
+		45BC91B72C40334F001EA10A /* generales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BC91B62C40334F001EA10A /* generales.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		459155672C3DA78700763E86 /* app-kiosco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-kiosco.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4591556A2C3DA78700763E86 /* app_kioscoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_kioscoApp.swift; sourceTree = "<group>"; };
-		4591556C2C3DA78700763E86 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4591556C2C3DA78700763E86 /* inicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inicio.swift; sourceTree = "<group>"; };
 		4591556E2C3DA78800763E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		459155712C3DA78800763E86 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		459155772C3DA78900763E86 /* app-kioscoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "app-kioscoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,18 @@
 		459155812C3DA78900763E86 /* app-kioscoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "app-kioscoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		459155852C3DA78900763E86 /* app_kioscoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_kioscoUITests.swift; sourceTree = "<group>"; };
 		459155872C3DA78900763E86 /* app_kioscoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_kioscoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		45ABB8542C3EDEF300BF7B17 /* splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splash.swift; sourceTree = "<group>"; };
+		45AEA8AA2C403A500073B1FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		45AEA8BD2C4074FD0073B1FC /* carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carousel.swift; sourceTree = "<group>"; };
+		45AEA8C12C408DCE0073B1FC /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		45AEA8C22C408DCE0073B1FC /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		45AEA8C32C408DCE0073B1FC /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		45AEA8C42C408DCE0073B1FC /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		45AEA8C52C408DCE0073B1FC /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		45AEA8C62C408DCE0073B1FC /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		45AEA8C72C408DCE0073B1FC /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		45AEA8C82C408DCE0073B1FC /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		45BC91B62C40334F001EA10A /* generales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generales.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				459155692C3DA78700763E86 /* app-kiosco */,
-				4591557A2C3DA78900763E86 /* app-kioscoTests */,
 				459155842C3DA78900763E86 /* app-kioscoUITests */,
 				459155682C3DA78700763E86 /* Products */,
 			);
@@ -95,7 +109,20 @@
 			isa = PBXGroup;
 			children = (
 				4591556A2C3DA78700763E86 /* app_kioscoApp.swift */,
-				4591556C2C3DA78700763E86 /* ContentView.swift */,
+				45AEA8AA2C403A500073B1FC /* Info.plist */,
+				45ABB8542C3EDEF300BF7B17 /* splash.swift */,
+				4591556C2C3DA78700763E86 /* inicio.swift */,
+				45AEA8BD2C4074FD0073B1FC /* carousel.swift */,
+				45BC91B62C40334F001EA10A /* generales.swift */,
+				45AEA8C32C408DCE0073B1FC /* Poppins-Regular.ttf */,
+				45AEA8C52C408DCE0073B1FC /* Poppins-Black.ttf */,
+				45AEA8C72C408DCE0073B1FC /* Poppins-Bold.ttf */,
+				45AEA8C12C408DCE0073B1FC /* Poppins-Italic.ttf */,
+				45AEA8C62C408DCE0073B1FC /* Poppins-Light.ttf */,
+				45AEA8C22C408DCE0073B1FC /* Poppins-LightItalic.ttf */,
+				45AEA8C42C408DCE0073B1FC /* Poppins-Medium.ttf */,
+				45AEA8C82C408DCE0073B1FC /* Poppins-MediumItalic.ttf */,
+				4591557A2C3DA78900763E86 /* app-kioscoTests */,
 				4591556E2C3DA78800763E86 /* Assets.xcassets */,
 				459155702C3DA78800763E86 /* Preview Content */,
 			);
@@ -257,8 +284,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4591556D2C3DA78700763E86 /* ContentView.swift in Sources */,
+				45BC91B72C40334F001EA10A /* generales.swift in Sources */,
+				4591556D2C3DA78700763E86 /* inicio.swift in Sources */,
 				4591556B2C3DA78700763E86 /* app_kioscoApp.swift in Sources */,
+				45AEA8BE2C4074FD0073B1FC /* carousel.swift in Sources */,
+				45ABB8552C3EDEF300BF7B17 /* splash.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,12 +452,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"app-kiosco/Preview Content\"";
+				DEVELOPMENT_TEAM = PD54BV7UW3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "app-kiosco/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Kiosco;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,12 +483,15 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"app-kiosco/Preview Content\"";
+				DEVELOPMENT_TEAM = PD54BV7UW3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "app-kiosco/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Kiosco;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
