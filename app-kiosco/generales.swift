@@ -44,8 +44,8 @@ extension Font {
       var fuente = "Poppins-Regular"
       let estilos = [
          "black", "bold", "bolditalic",
-         "italic", "light", "lightitalic",
-         "medium", "mediumitalic"
+         "italic", "light", "extrabold",
+         "medium", "thin"
       ]
       if !estilo.isEmpty {
          if estilos.contains(estilo.lowercased())  {

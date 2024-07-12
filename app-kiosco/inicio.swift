@@ -11,7 +11,7 @@ struct Inicio: View {
    @State private var busqueda = ""
 
    var body: some View {
-      ScrollView {
+      VStack {
          VStack(spacing: 0) {
             VStack {
                // Header
@@ -109,7 +109,19 @@ struct Inicio: View {
                      .cornerRadius(10)
                      
                      Button (action: {
-                        print("Buscar")
+                        api_genera_token {
+                           (result: Result<String, Error>) in
+                           switch result {
+                           case .success(let token):
+                              print(
+                                 "Token obtenido correctamente: \(token)"
+                              )
+                           case .failure(let error):
+                              print(
+                                 "Error al obtener el token: \(error)"
+                              )
+                           }
+                        }
                      }) {
                         Image(systemName: "magnifyingglass")
                            .foregroundColor(Color.white)
