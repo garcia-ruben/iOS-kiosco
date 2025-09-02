@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		450EE5F72C458D860066F161 /* inicio_v2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450EE5F62C458D860066F161 /* inicio_v2.swift */; };
+		452D59BA2C45C769008849AF /* error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452D59B92C45C769008849AF /* error.swift */; };
+		452D59BC2C45D5FC008849AF /* funciones_detalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452D59BB2C45D5FB008849AF /* funciones_detalle.swift */; };
+		457801202C419BB600AA4D7E /* detalle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4578011F2C419BB600AA4D7E /* detalle.swift */; };
+		457801222C41AD8600AA4D7E /* header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457801212C41AD8600AA4D7E /* header.swift */; };
+		457801242C41BEE500AA4D7E /* facturar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457801232C41BEE500AA4D7E /* facturar.swift */; };
+		45913D8E2C49D4A700CC54A9 /* exito_factura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45913D8D2C49D4A700CC54A9 /* exito_factura.swift */; };
+		45913D902C49D87500CC54A9 /* funciones_facturar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45913D8F2C49D87500CC54A9 /* funciones_facturar.swift */; };
 		4591556B2C3DA78700763E86 /* app_kioscoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4591556A2C3DA78700763E86 /* app_kioscoApp.swift */; };
 		4591556D2C3DA78700763E86 /* inicio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4591556C2C3DA78700763E86 /* inicio.swift */; };
 		4591556F2C3DA78800763E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4591556E2C3DA78800763E86 /* Assets.xcassets */; };
@@ -16,6 +24,7 @@
 		459155882C3DA78900763E86 /* app_kioscoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459155872C3DA78900763E86 /* app_kioscoUITestsLaunchTests.swift */; };
 		45ABB8552C3EDEF300BF7B17 /* splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45ABB8542C3EDEF300BF7B17 /* splash.swift */; };
 		45AEA8BE2C4074FD0073B1FC /* carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AEA8BD2C4074FD0073B1FC /* carousel.swift */; };
+		45B299D12C4EF191007FD113 /* prueba.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B299D02C4EF191007FD113 /* prueba.swift */; };
 		45BC91B72C40334F001EA10A /* generales.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45BC91B62C40334F001EA10A /* generales.swift */; };
 		45BD6E4E2C417DFE005BE815 /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45BD6E452C417DFE005BE815 /* Poppins-Black.ttf */; };
 		45BD6E4F2C417DFE005BE815 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45BD6E462C417DFE005BE815 /* Poppins-Thin.ttf */; };
@@ -47,6 +56,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		450EE5F62C458D860066F161 /* inicio_v2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inicio_v2.swift; sourceTree = "<group>"; };
+		452D59B92C45C769008849AF /* error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = error.swift; sourceTree = "<group>"; };
+		452D59BB2C45D5FB008849AF /* funciones_detalle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = funciones_detalle.swift; sourceTree = "<group>"; };
+		4578011F2C419BB600AA4D7E /* detalle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detalle.swift; sourceTree = "<group>"; };
+		457801212C41AD8600AA4D7E /* header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = header.swift; sourceTree = "<group>"; };
+		457801232C41BEE500AA4D7E /* facturar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = facturar.swift; sourceTree = "<group>"; };
+		45913D8D2C49D4A700CC54A9 /* exito_factura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exito_factura.swift; sourceTree = "<group>"; };
+		45913D8F2C49D87500CC54A9 /* funciones_facturar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = funciones_facturar.swift; sourceTree = "<group>"; };
 		459155672C3DA78700763E86 /* app-kiosco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-kiosco.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4591556A2C3DA78700763E86 /* app_kioscoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_kioscoApp.swift; sourceTree = "<group>"; };
 		4591556C2C3DA78700763E86 /* inicio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inicio.swift; sourceTree = "<group>"; };
@@ -59,6 +76,7 @@
 		459155872C3DA78900763E86 /* app_kioscoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app_kioscoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		45ABB8542C3EDEF300BF7B17 /* splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = splash.swift; sourceTree = "<group>"; };
 		45AEA8BD2C4074FD0073B1FC /* carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carousel.swift; sourceTree = "<group>"; };
+		45B299D02C4EF191007FD113 /* prueba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prueba.swift; sourceTree = "<group>"; };
 		45BC91B62C40334F001EA10A /* generales.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generales.swift; sourceTree = "<group>"; };
 		45BD6E452C417DFE005BE815 /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Black.ttf"; path = "../../../../Downloads/Poppins 2/Poppins-Black.ttf"; sourceTree = "<group>"; };
 		45BD6E462C417DFE005BE815 /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Thin.ttf"; path = "../../../../Downloads/Poppins 2/Poppins-Thin.ttf"; sourceTree = "<group>"; };
@@ -121,8 +139,15 @@
 			children = (
 				4591556A2C3DA78700763E86 /* app_kioscoApp.swift */,
 				45ABB8542C3EDEF300BF7B17 /* splash.swift */,
+				457801212C41AD8600AA4D7E /* header.swift */,
 				4591556C2C3DA78700763E86 /* inicio.swift */,
+				4578011F2C419BB600AA4D7E /* detalle.swift */,
+				452D59B92C45C769008849AF /* error.swift */,
+				457801232C41BEE500AA4D7E /* facturar.swift */,
+				45913D8D2C49D4A700CC54A9 /* exito_factura.swift */,
 				45BD6E572C418179005BE815 /* funciones_inicio.swift */,
+				452D59BB2C45D5FB008849AF /* funciones_detalle.swift */,
+				45913D8F2C49D87500CC54A9 /* funciones_facturar.swift */,
 				45AEA8BD2C4074FD0073B1FC /* carousel.swift */,
 				45BC91B62C40334F001EA10A /* generales.swift */,
 				45BD6E452C417DFE005BE815 /* Poppins-Black.ttf */,
@@ -137,6 +162,8 @@
 				4591557A2C3DA78900763E86 /* app-kioscoTests */,
 				4591556E2C3DA78800763E86 /* Assets.xcassets */,
 				459155702C3DA78800763E86 /* Preview Content */,
+				450EE5F62C458D860066F161 /* inicio_v2.swift */,
+				45B299D02C4EF191007FD113 /* prueba.swift */,
 			);
 			path = "app-kiosco";
 			sourceTree = "<group>";
@@ -305,11 +332,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				450EE5F72C458D860066F161 /* inicio_v2.swift in Sources */,
+				45B299D12C4EF191007FD113 /* prueba.swift in Sources */,
+				457801222C41AD8600AA4D7E /* header.swift in Sources */,
+				457801242C41BEE500AA4D7E /* facturar.swift in Sources */,
+				452D59BA2C45C769008849AF /* error.swift in Sources */,
 				45BC91B72C40334F001EA10A /* generales.swift in Sources */,
+				457801202C419BB600AA4D7E /* detalle.swift in Sources */,
+				452D59BC2C45D5FC008849AF /* funciones_detalle.swift in Sources */,
 				45BD6E582C418179005BE815 /* funciones_inicio.swift in Sources */,
+				45913D902C49D87500CC54A9 /* funciones_facturar.swift in Sources */,
 				4591556D2C3DA78700763E86 /* inicio.swift in Sources */,
 				4591556B2C3DA78700763E86 /* app_kioscoApp.swift in Sources */,
 				45AEA8BE2C4074FD0073B1FC /* carousel.swift in Sources */,
+				45913D8E2C49D4A700CC54A9 /* exito_factura.swift in Sources */,
 				45ABB8552C3EDEF300BF7B17 /* splash.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

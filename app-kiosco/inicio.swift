@@ -9,48 +9,19 @@ import SwiftUI
 
 struct Inicio: View {
    @State private var busqueda = ""
-
+   @State private var empresa: [String: Any] = [:]
+   @State private var logo_empresa: Image?
+   @State private var existe_empresa: Bool = false
+   @State private var mostrar_modal: Bool = false
+   var token: String = ""
+   
    var body: some View {
-      VStack {
-         VStack(spacing: 0) {
-            VStack {
-               // Header
-               HStack {
-                  VStack {
-                     Image("kiosco-logo")
-                        .resizable()
-                        .aspectRatio( contentMode: .fit )
-                        .frame(width: 70)
-                  }
-                  VStack {
-                     Text(
-                        "Portal de facturación."
-                     ).font(
-                        .Poppins (
-                           tamaño: 19,
-                           estilo: "bold"
-                        )
-                     )
-                     .foregroundColor(color_main)
-                     .frame(
-                        maxWidth: .infinity,
-                        alignment: .leading
-                     )
-                     
-                     Text("Buscador de empresas.")
-                        .font(.Poppins (
-                           tamaño: 23,
-                           estilo: "bold")
-                        )
-                        .foregroundColor(color_primary)
-                        .frame(
-                           maxWidth: .infinity,
-                           alignment: .leading
-                        )
-                  }
-               }
-               .padding(10)
-               
+      ZStack {
+         color_background.edgesIgnoringSafeArea(.all)
+         VStack {
+            // Header
+            Header(titulo: "empresa")
+            ScrollView {
                VStack {
                   // Sección de ayuda
                   HStack {
@@ -93,33 +64,34 @@ struct Inicio: View {
                            ZStack (alignment: .leading) {
                               if busqueda.isEmpty {
                                  Text ("Referencia de empresa")
-                                 .foregroundStyle(color_primary.opacity(0.3))
-                                 .font(.Poppins(tamaño: 16))
+                                    .foregroundStyle(color_primary.opacity(0.3))
+                                    .font(.Poppins(tamaño: 16))
                               }
-                              TextField(
-                                 "",
-                                 text: $busqueda
-                              )
-                              .font(.Poppins(tamaño: 16))
-                              .foregroundColor(color_primary)
+                              TextField("", text: $busqueda)
+                                 .font(.Poppins(tamaño: 16))
+                                 .foregroundColor(color_primary)
+                                 .frame(maxHeight: .infinity)
                            }
                         }
                         .padding(10)
                      }
                      .cornerRadius(10)
                      
-                     Button (action: {
-                        api_genera_token {
-                           (result: Result<String, Error>) in
-                           switch result {
-                           case .success(let token):
-                              print(
-                                 "Token obtenido correctamente: \(token)"
-                              )
-                           case .failure(let error):
-                              print(
-                                 "Error al obtener el token: \(error)"
-                              )
+                     Button(action: {
+                        api_buscar_empresa(
+                           token: token,
+                           referencia: busqueda
+                        ) { resultado in
+                           if let exito = resultado["exito"] as? Bool, exito {
+                              empresa = resultado
+                              if let logo_b64 = empresa["logo"] as? String,
+                                 let logo_decode = Data(base64Encoded: logo_b64),
+                                 let logo_img = UIImage(data: logo_decode) {
+                                 logo_empresa = Image(uiImage: logo_img)
+                              }
+                              existe_empresa = true
+                           } else {
+                              mostrar_modal = true
                            }
                         }
                      }) {
@@ -148,14 +120,40 @@ struct Inicio: View {
                }
                .padding(10)
             }
-            .frame(height: 500)
-            VStack {
-               Carousel()
-               .background(color_primary)
-            }
+            Carousel().background(color_primary)
          }
       }
-      .background(color_background)
+      .navigationDestination(isPresented: $existe_empresa) {
+         if !empresa.isEmpty {
+            Detalle(empresa: empresa, token: token)
+               .navigationBarBackButtonHidden(true)
+            // Toolbar personalizado
+               .toolbar {
+                  ToolbarItem(placement: .navigationBarLeading) {
+                     Button(action: {
+                        // 0.3s de tiempo para regresarse al buscador de empresas
+                        // ya que si se hace muy rápido no regresa correctamente
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                           existe_empresa = false
+                        }
+                        print(existe_empresa)
+                     }) {
+                        HStack {
+                           Image(systemName: "chevron.backward")
+                           Text("Volver")
+                        }
+                        .foregroundColor(color_main)
+                     }
+                  }
+               }
+         }
+      }
+      .sheet(isPresented: $mostrar_modal) {
+         Modal(
+            titulo: "¡No se ha encontrado ninguna empresa!",
+            mensaje: "Por favor verifica tus datos e inténtalo nuevamente"
+         )
+      }
    }
 }
 
