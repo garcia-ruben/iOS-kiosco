@@ -73,8 +73,8 @@ func convertirDatosAJSON(_ datos: [String: Any]) throws -> Data {
 }
 
 // Variables para consumir las APIS
-let host_admin = "https://develop5.datawork.mx:9009"
-let host_microservicio = "http://35.162.161.74:9001"
+let host_admin = "https://10.90.10.22:9015"
+let host_microservicio = "http:127.0.0.1:8001"
 let mensaje_error: [String: Any] = [
    "exito": false,
    "mensaje": "Error en la solicitud"
